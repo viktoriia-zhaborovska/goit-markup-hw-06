@@ -45,6 +45,88 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mob-btn">
+            <svg class="mob-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-list">
+            <li class="mob-item">
+              <a class="mob-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-item"><a class="mob-link" href="">Portfolio</a></li>
+            <li class="mob-item"><a class="mob-link" href="">Contacts</a></li>
+          </ul>
+        <address class="mob-adr">
+          <ul class="mob-adr-list">
+            <li>
+              <a class="mob-adr-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="mob-adr-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <div class="mob-icons-conainer">
+         <ul class="mob-soc-list">
+            <li class="mob-soc-item">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="mob-soc-linc"
+              >
+                <svg class="mob-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-soc-item">
+              <a href="https://x.com/" target="_blank" class="mob-soc-linc">
+                <svg class="mob-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-soc-item">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="mob-soc-linc"
+              >
+                <svg class="mob-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-soc-item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="mob-soc-linc"
+              >
+                <svg class="mob-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
       </div>
     </header>
 
@@ -111,13 +193,14 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/img.jpg"
+                srcset="./images/team-1.jpg 1x., ./images/team-1@2x.jpg 2x"
+                src="./images/team-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 class="team-image"
@@ -175,7 +258,8 @@
 
             <li class="team-item">
               <img
-                src="./images/img-1.jpg"
+                srcset="./images/team-2.jpg 1x., ./images/team-2@2x.jpg 2x"
+                src="./images/team-2.jpg"
                 alt="Tom Ford"
                 width="264"
                 class="team-image"
@@ -232,7 +316,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-2.jpg"
+                srcset="./images/team-3.jpg 1x., ./images/team-3@2x.jpg 2x"
+                src="./images/team-3.jpg"
                 alt="Camila Garcia"
                 width="264"
                 class="team-image"
@@ -290,7 +375,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-3.jpg"
+                srcset="./images/team-4.jpg 1x. ,./images/team-4@2x.jpg 2x"
+                src="./images/team-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 class="team-image"
@@ -349,14 +435,15 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="prtf-box">
                 <img
-                  src="./images/img-4.jpg"
+                  srcset="./images/portf-1.jpg 1x, ./images/portf-1@2x 2x"
+                  src="./images/portf-1.jpg"
                   alt="app"
                   width="360"
                   class="portfolio-image"
@@ -375,7 +462,8 @@
             <li class="portfolio-item">
               <div class="prtf-box">
                 <img
-                  src="./images/img-5.jpg"
+                  srcset="./images/portf-2.jpg 1x, ./images/portf-2@2x 2x"
+                  src="./images/portf-2.jpg"
                   alt="payment"
                   width="360"
                   class="portfolio-image"
@@ -394,7 +482,8 @@
             <li class="portfolio-item">
               <div class="prtf-box">
                 <img
-                  src="./images/img-6.jpg"
+                  srcset="./images/portf-3.jpg 1x, ./images/portf-3@2x 2x"
+                  src="./images/portf-3.jpg"
                   alt="mediation apps"
                   width="360"
                   class="portfolio-image"
@@ -413,7 +502,8 @@
             <li class="portfolio-item">
               <div class="prtf-box">
                 <img
-                  src="./images/img-7.jpg"
+                  srcset="./images/portf-4.jpg 1x, ./images/portf-4@2x 2x"
+                  src="./images/portf-4.jpg"
                   alt="taxi server"
                   width="360"
                   class="portfolio-image"
@@ -432,7 +522,8 @@
             <li class="portfolio-item">
               <div class="prtf-box">
                 <img
-                  src="./images/img-8.jpg"
+                  srcset="./images/portf-5.jpg 1x, ./images/portf-5@2x 2x"
+                  src="./images/portf-5.jpg"
                   alt="phonescreen"
                   width="360"
                   class="portfolio-image"
@@ -451,7 +542,8 @@
             <li class="portfolio-item">
               <div class="prtf-box">
                 <img
-                  src="./images/img-9.jpg"
+                  srcset="./images/portf-6.jpg 1x, ./images/portf-6@2x 2x"
+                  src="./images/portf-6.jpg"
                   alt="girl listen to music"
                   width="360"
                   class="portfolio-image"
@@ -471,7 +563,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="logo-box">
           <a class="logo footer-logo" href="./index.html"
@@ -553,7 +645,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -627,9 +719,9 @@
                 ><svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-              </span>
+              </span> <span>
               I accept the terms and conditions of the&nbsp;
-              <a href="" class="checkbox-link">Privacy Policy</a>
+              <a href="" class="checkbox-link">Privacy Policy</a></span>
             </label>
           </div>
           <button class="subm-btn" type="submit">Send</button>
