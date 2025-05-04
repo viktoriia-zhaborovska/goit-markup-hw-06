@@ -285,11 +285,14 @@ header {
 }
 
 .mob-link {
+  font-family: "Roboto", sans-serif;
+
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
   line-height: 1.11;
-  color: #268;
+  color: #2e2f42;
+  text-decoration: none;
 }
 
 .mob-link:hover,
@@ -446,7 +449,7 @@ header {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  color: #268;
+  color: #2e2f42;
   margin-bottom: 16px;
 }
 
@@ -480,7 +483,7 @@ header {
 
 .form-icon {
   position: absolute;
-  fill: #268;
+  fill: #2e2f42;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -625,7 +628,7 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/backg-m-min.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -637,6 +640,17 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-resolution: 2x) {
+  .page {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/backg-m@2x-min.jpg");
+  }
 }
 
 .page-title {
@@ -654,6 +668,40 @@ header {
 
 @media screen and (min-width: 768px) {
   .page {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tab-min.jpg);
+  }
+
+  @media (min-resolution: 2x) {
+    .page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-tab@2x-min.jpg);
+    }
+  }
+}
+
+.container {
+  max-width: 768px;
+}
+
+.page-title {
+  max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 36px;
+}
+
+@media screen and (min-width: 1158px) {
+  .page {
+    padding: 188px 0;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -662,33 +710,14 @@ header {
       url(../images/people-office.jpg);
   }
 
-  .container {
-    max-width: 768px;
-  }
-
-  .page-title {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .page {
-    padding: 112px 0;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .page {
-    padding: 188px 0;
+  @media (min-resolution: 2x) {
+    .page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office@2x.jpg);
+    }
   }
 
   .container {
