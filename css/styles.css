@@ -2,7 +2,7 @@
   display: none;
 }
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   letter-spacing: 0.02em;
@@ -285,8 +285,6 @@ header {
 }
 
 .mob-link {
-  font-family: "Roboto", sans-serif;
-
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
@@ -298,6 +296,10 @@ header {
 .mob-link:hover,
 .mob-link:focus {
   color: #404bbf;
+}
+
+.mob-adr {
+  font-style: normal;
 }
 
 .mob-adr-list {
@@ -312,7 +314,6 @@ header {
 .mob-adr-link {
   line-height: 1.2;
   letter-spacing: 0.02em;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #434455;
